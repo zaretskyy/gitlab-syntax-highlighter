@@ -1,0 +1,5 @@
+.line_content pre.highlight {
+    background: transparent !important;
+    display: inline;
+    border: none;
+}

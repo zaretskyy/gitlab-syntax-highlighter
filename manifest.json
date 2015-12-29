@@ -1,0 +1,28 @@
+{
+  "name": "Gitlab syntax highlighter",
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "description": "Enables Syntax highlight for diffs on GitLab",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*/merge_requests/*"
+        ],
+      "css": [
+        "vendor/styles/prettify.css",
+        "vendor/styles/style.css",
+        "vendor/styles/theme-balupton.css",
+        "styles/gl-diff-highlight.css"
+      ],
+      "js": [
+        "vendor/jquery-2.0.3.js",
+        "vendor/core.console.js",
+        "vendor/jquery.appendscriptstyle.js",
+        "vendor/jquery.syntaxhighlighter.js",
+        "vendor/prettify.js",
+        "src/gl-diff-highlight.js"
+      ]
+    }
+  ]
+}
